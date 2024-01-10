@@ -1,1 +1,19 @@
+-- Step 1: Create the database
+CREATE DATABASE studentdb;
+
+-- Step 2: Use the database
+USE studentdb;
+
+-- Step 3: Create the table tblstudent
+CREATE TABLE tblstudent (
+    studentId INT PRIMARY KEY AUTO_INCREMENT,
+    studentName VARCHAR(100),
+    day DATE,
+    address VARCHAR(100)
+);
+
+-- Step 4: Add entries into the table
+INSERT INTO tblstudent (studentName, day, address) VALUES ('John Doe', '2023-01-01', '123 Main Street');
+INSERT INTO tblstudent (studentName, day, address) VALUES ('Jane Smith', '2023-02-15', '456 Oak Avenue');
+INSERT INTO tblstudent (studentName, day, address) VALUES ('Bob Johnson', '2023-03-30', '789 Elm Boulevard');
 
